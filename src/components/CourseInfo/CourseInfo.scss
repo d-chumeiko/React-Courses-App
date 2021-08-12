@@ -1,0 +1,29 @@
+.courses-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    width: 70%;
+  }
+
+  &__back-link {
+    width: 100%;
+    text-align: left;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

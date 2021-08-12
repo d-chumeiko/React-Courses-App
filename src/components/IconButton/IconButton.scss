@@ -1,0 +1,21 @@
+.icon-button {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid rgb(207, 0, 235);
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    background-color: rgb(210, 210, 210);
+    color: initial;
+  }
+}

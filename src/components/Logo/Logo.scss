@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+
+  a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 5rem;
+  }
+
+  &__heading {
+    margin-top: 1.3rem;
+    font-size: 1.7rem;
+    color: rgb(2, 21, 104);
+  }
+}

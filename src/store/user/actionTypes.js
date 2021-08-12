@@ -1,0 +1,3 @@
+export const SET_USER_DATA = 'SET_USER_DATA';
+export const TOGGLE_USER_IS_AUTH = 'TOGGLE_USER_IS_AUTH';
+export const SET_USER_TOKEN = 'SET_USER_TOKEN';

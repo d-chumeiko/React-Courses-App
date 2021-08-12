@@ -1,0 +1,87 @@
+.course-form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+
+  &__top-line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+  }
+
+  &__bottom-line {
+    position: relative;
+    padding: 0 1rem 1rem;
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__label {
+    margin-bottom: 0.6rem;
+    font-weight: normal;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  .authors {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+    }
+
+    &__add,
+    &__list,
+    &__course-list {
+      width: 40%;
+    }
+
+    &__add {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__course-list,
+    &__list {
+      ul {
+        .empty-list {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .duration {
+    width: 40%;
+    margin-top: 2rem;
+  }
+}
