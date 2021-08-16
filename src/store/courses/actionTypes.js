@@ -1,3 +1,4 @@
+export const GET_COURSES = 'GET_COURSES';
 export const SET_COURSES = 'SET_COURSES';
 export const SET_COURSE_INFO = 'SET_COURSE_INFO';
 export const SET_COURSE_FETCH_ERROR = 'SET_COURSE_FETCH_ERROR';

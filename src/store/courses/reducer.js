@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 
 import {
+  GET_COURSES,
   SET_COURSES,
   SET_COURSE_FETCH_ERROR,
   SET_COURSE_INFO,
@@ -14,6 +15,9 @@ const coursesInitialState = {
 
 const coursesReducer = (state = coursesInitialState, action) => {
   switch (action.type) {
+    case GET_COURSES:
+      return state.courses;
+
     case SET_COURSES:
       return {
         ...state,

@@ -62,7 +62,7 @@ const CourseForm = ({
   };
 
   return (
-    <div className='course-form'>
+    <div className='course-form' data-testid='course-form'>
       <CourseFormMainInfo
         type={type}
         initialValues={initialValues}

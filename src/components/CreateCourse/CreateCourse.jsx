@@ -6,7 +6,7 @@ import './CreateCourse.scss';
 import { CREATE_COURSE_FORM_TYPE } from '../../constants';
 import { createAuthorsObjectArrayPropType } from '../../utils/propTypesHelper';
 
-const CreateCourse = ({ token, authors, addCourse }) => {
+const CreateCourse = ({ authors, addCourse }) => {
   const [courseAuthors, setCourseAuthors] = useState([]);
 
   return (
@@ -20,7 +20,6 @@ const CreateCourse = ({ token, authors, addCourse }) => {
 };
 
 CreateCourse.propTypes = {
-  token: PropTypes.string,
   authors: createAuthorsObjectArrayPropType(),
   addCourse: PropTypes.func,
 };

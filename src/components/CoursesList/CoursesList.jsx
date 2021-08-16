@@ -20,7 +20,7 @@ const CoursesList = ({ courses, authorsList }) => (
         const mappedAuthors = mapAuthorsById(authors, authorsList);
 
         const convertedDuration = `${pipeDuration(duration)} hours`;
-        const convertedDate = creationDate.replaceAll('/', '.');
+        const convertedDate = creationDate.replace(/\//g, '.');
 
         return (
           <li key={id}>

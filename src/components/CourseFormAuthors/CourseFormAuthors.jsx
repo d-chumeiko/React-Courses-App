@@ -72,7 +72,7 @@ const CourseFormAuthors = ({
   };
 
   const authorsList = tmpAuthors.map(({ id, name }) => (
-    <li key={id}>
+    <li key={id} data-testid='authors-list-item'>
       <span>{name}</span>
       <Button
         label={ADD_AUTHOR_BTN_LABEL}
@@ -83,7 +83,7 @@ const CourseFormAuthors = ({
 
   const courseAuthorsList = courseAuthors
     ? courseAuthors.map(({ id, name }) => (
-        <li key={id}>
+        <li key={id} data-testid='courses-authors-list-item'>
           <span>{name}</span>
           <Button
             label={DELETE_AUTHOR_BTN_LABEL}

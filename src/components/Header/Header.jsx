@@ -17,19 +17,19 @@ const Header = ({ token, name, isAuth, logout }) => {
 
   return (
     <header className='header'>
-      <div className='header__logo'>
+      <div className='header__logo' data-testid='header-logo'>
         <Logo />
       </div>
 
-      <div className='header__user'>
-        {isAuth && <span className='header__user__name'>{name}</span>}
+      {isAuth && (
+        <div className='header__user' data-testid='header-user'>
+          <span className='header__user__name'>{name}</span>
 
-        {isAuth && (
           <span className='header__user__auth'>
             <Button label='Logout' onClick={handleLogoutButtonClick} />
           </span>
-        )}
-      </div>
+        </div>
+      )}
     </header>
   );
 };

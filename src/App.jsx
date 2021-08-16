@@ -10,8 +10,18 @@ import Courses from './components/Courses/';
 import Login from './components/Login';
 import Registration from './components/Registration';
 
-import { COURSES_PATH, LOGIN_PATH, REGISTRATION_PATH } from './constants';
+import {
+  COURSES_ADD_PATH,
+  COURSES_PATH,
+  COURSES_UPDATE_PATH,
+  LOGIN_PATH,
+  REGISTRATION_PATH,
+} from './constants';
 import './App.scss';
+import PrivateRoute from './components/PrivateRoute';
+import CreateCourse from './components/CreateCourse';
+import CourseInfo from './components/CourseInfo';
+import UpdateCourse from './components/UpdateCourse';
 
 const Main = ({ token, authUser }) => {
   useEffect(() => {
@@ -26,7 +36,21 @@ const Main = ({ token, authUser }) => {
 
       <main className='main'>
         <Switch>
-          <Route path={COURSES_PATH} component={Courses} />
+          <Route exact path={COURSES_PATH} component={Courses} />
+
+          <PrivateRoute exact path={COURSES_ADD_PATH} comp={CreateCourse} />
+
+          <Route
+            exact
+            path={`${COURSES_PATH}/:courseId`}
+            component={CourseInfo}
+          />
+
+          <PrivateRoute
+            exact
+            path={`${COURSES_UPDATE_PATH}/:courseId`}
+            comp={UpdateCourse}
+          />
 
           <Route exact path={LOGIN_PATH} component={Login} />
 

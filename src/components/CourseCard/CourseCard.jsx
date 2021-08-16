@@ -44,7 +44,7 @@ const CourseCard = ({
   };
 
   return (
-    <div className='course-card'>
+    <div className='course-card' data-testid='course-card'>
       <div className='course-card__main'>
         <h2 className='course-card__title'>{title}</h2>
         <p className='course-card__description'>{description}</p>
